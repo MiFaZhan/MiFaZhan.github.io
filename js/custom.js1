@@ -1,0 +1,9 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const videos = [
+    '/videos/1.mp4',  // 视频路径需与存放位置一致
+    '/videos/2.mp4',
+  ];
+  const videoElement = document.getElementById('bg-video');
+  const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+  videoElement.src = randomVideo;
+});
