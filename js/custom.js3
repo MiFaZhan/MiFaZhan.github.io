@@ -1,0 +1,98 @@
+document.addEventListener("DOMContentLoaded", () => {
+  if (shouldLoadVideo()) {
+    loadPexelsVideo().catch(handleVideoError);
+  }
+});
+
+function shouldLoadVideo() {
+  const isMobile = /(iPhone|iPad|iPod|Android)/i.test(navigator.userAgent);
+  return !isMobile && document.body.dataset.video === "true";
+}
+
+async function loadPexelsVideo() {
+  // 获取配置参数
+  const config = {
+    apiKey: document.body.dataset.pexelsApiKey,
+    query: document.body.dataset.pexelsQuery,
+    orientation: document.body.dataset.pexelsOrientation,
+    size: document.body.dataset.pexelsSize,
+    perPage: parseInt(document.body.dataset.pexelsPerPage) || 15
+  };
+
+  // 构造API请求
+  const apiUrl = new URL("https://api.pexels.com/videos/search");
+  apiUrl.searchParams.append("query", config.query);
+  apiUrl.searchParams.append("orientation", config.orientation);
+  apiUrl.searchParams.append("per_page", config.perPage);
+
+  // 发送API请求
+  const response = await fetch(apiUrl, {
+    headers: { Authorization: config.apiKey }
+  });
+
+  if (!response.ok) throw new Error(`API Error: ${response.status}`);
+
+  const data = await response.json();
+  const videoFile = selectVideoFile(data, config.size);
+  
+  if (!videoFile) throw new Error("No valid video found");
+  
+  createVideoPlayer(videoFile.link);
+}
+
+function selectVideoFile(data, targetSize) {
+  // 过滤有效视频
+  const validVideos = data.videos.filter(v => 
+    v.duration > 5 &&  // 至少5秒时长
+    v.width >= 1280    // 最低720p
+  );
+
+  if (validVideos.length === 0) return null;
+
+  // 随机选择视频
+  const randomVideo = validVideos[Math.floor(Math.random() * validVideos.length)];
+  
+  // 匹配最佳分辨率
+  const sortedFiles = randomVideo.video_files
+    .filter(file => file.quality === targetSize && file.file_type === "video/mp4")
+    .sort((a, b) => b.width - a.width);
+
+  return sortedFiles[0] || randomVideo.video_files[0];
+}
+
+function createVideoPlayer(videoUrl) {
+  const container = document.createElement('div');
+  container.id = 'pexels-video-container';
+  container.style.cssText = `
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  `;
+
+  const video = document.createElement('video');
+  video.autoplay = true;
+  video.muted = true;
+  video.loop = true;
+  video.playsInline = true;
+  video.style.cssText = `
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  `;
+
+  video.innerHTML = `<source src="${videoUrl}" type="video/mp4">`;
+  container.appendChild(video);
+  document.body.prepend(container);
+
+  setupVideoResponsive(video);
+}
+
+// 保持原有的自适应和错误处理函数不变
