@@ -28,7 +28,7 @@
 /* 修改导航栏标题样式 */
 .navbar-brand {
     font-family: "Gama Hand", serif; /* 字体名称 */
-    font-size: 1rem;          /* 字体大小 */
+    font-size: 1.2rem;          /* 字体大小 */
 }
 
 .navbar-brand {
@@ -44,6 +44,17 @@
         sans-serif !important;  /* 强制覆盖 */
 }
 
+/* 对应CSS */
+.navbar-brand {
+    visibility: hidden;
+}
+.fonts-loaded .navbar-brand {
+    visibility: visible;
+    animation: fadeIn 0.5s;
+}
+
+
+
 .video-background {
   position: fixed;
   top: 0;
@@ -54,6 +65,7 @@
   object-fit: cover;
   pointer-events: none; /* 防止视频阻挡点击事件 */
 }
+
 
 
 /* 手写动画关键帧 */
