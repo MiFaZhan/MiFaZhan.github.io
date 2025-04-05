@@ -9,6 +9,28 @@
 }
 */
 
+/*@font-face {
+    font-family: 'Foxlite Script';
+    src: url('/fonts/Foxlite Script.otf') format('otf');
+}*/
+
+/*@font-face {
+    font-family: 'WindSong-Regular';
+    src: url('/fonts/WindSong-Regular.otf') format('otf');
+}*/
+
+@font-face {
+    font-family: 'Gama Hand';
+    src: url('/fonts/Gama Hand.otf') format('otf');
+}
+
+
+/* 修改导航栏标题样式 */
+.navbar-brand {
+    font-family: "Gama Hand", serif; /* 字体名称 */
+    font-size: 1rem;          /* 字体大小 */
+}
+
 .video-background {
   position: fixed;
   top: 0;
@@ -19,3 +41,24 @@
   object-fit: cover;
   pointer-events: none; /* 防止视频阻挡点击事件 */
 }
+
+
+/* 手写动画关键帧 */
+@keyframes handwriting {
+  0% { 
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.navbar-brand {
+  animation: handwriting 2s ease-in-out forwards;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
