@@ -19,6 +19,7 @@
     font-display: swap;
 }
 
+
 @media (max-width: 768px) {
     .navbar-brand {
         font-size: 0.8rem; /* 移动端缩小字号 */
@@ -37,7 +38,7 @@
         Ubuntu,
         Cantarell,
         sans-serif;
-    font-size: 1rem;
+    font-size: 0.9rem;
     will-change: clip-path, opacity;
     animation: handwriting 2s ease-in-out forwards;
     position: relative;
