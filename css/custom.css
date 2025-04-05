@@ -31,14 +31,17 @@
     font-size: 1rem;          /* 字体大小 */
 }
 
-/* 移动端适配 */
-@media (max-width: 767px) {
-    .navbar-brand {
-        font-size: 1rem;  /* 缩小字号 */
-        font-weight: normal;  /* 调整字重 */
-        /* 确保字体声明覆盖默认样式 */
-        font-family: 'Gama Hand', sans-serif !important;
-    }
+.navbar-brand {
+    font-family: 
+        'Gama Hand',         /* 自定义字体 */
+        -apple-system,      /* iOS系统字体 */
+        BlinkMacSystemFont, /* macOS系统字体 */
+        "Segoe UI",         /* Windows */
+        Roboto,             /* Android */
+        Oxygen-Sans,        /* Linux */
+        Ubuntu,
+        Cantarell,
+        sans-serif !important;  /* 强制覆盖 */
 }
 
 .video-background {
