@@ -126,6 +126,32 @@
   <source src="/videos/Evening-Ocean-Breeze-4K.mp4" type="video/mp4">
   </video>
 
+
+  <video class="video-background" id="bg-video" muted playsinline>
+  <source src="/videos/Evening-Ocean-Breeze-4K.mp4" type="video/mp4">
+</video>
+
+<script>
+  // 解决iOS自动播放限制
+  document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('bg-video');
+    if (navigator.userAgent.match(/(iPad|iPhone|iPod)/i)) {
+      video.setAttribute('playsinline', '');
+      video.setAttribute('muted', '');
+      video.play().catch(() => {
+        // 自动播放被阻止时，添加点击事件触发
+        document.body.addEventListener('click', function initPlay() {
+          video.play();
+          document.body.removeEventListener('click', initPlay);
+        });
+      });
+    } else {
+      video.autoplay = true;
+      video.loop = true;
+    }
+  });
+</script>
+
   
 
   <header>
