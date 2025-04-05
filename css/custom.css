@@ -1,3 +1,8 @@
+@media (max-width: 768px) {
+  .video-background { display: none; }
+  body { background: url(/images/mobile-bg.jpg); }
+}
+
 .video-background {
   position: fixed;
   top: 0;
