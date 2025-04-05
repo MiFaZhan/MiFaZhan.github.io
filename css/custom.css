@@ -9,10 +9,10 @@
   body { background: url(/images/mobile-bg.jpg); }
 }
 
-@media (min-resolution: 200dpi) and (min-width: 800px) {
+/*@media (min-resolution: 200dpi) and (min-width: 800px) {
   .video-background { display: none; }
   body { background: url(/images/mobile-bg.jpg); }
-}
+}*/
 
 
 
