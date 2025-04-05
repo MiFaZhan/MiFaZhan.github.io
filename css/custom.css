@@ -1,4 +1,4 @@
-.video-background {
+/*.video-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,4 +6,15 @@
   height: 100%;
   z-index: -1;
   object-fit: cover;
+}
+*/
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* 调整为0避免层级冲突 */
+  object-fit: cover;
+  pointer-events: none; /* 防止视频阻挡点击事件 */
 }
