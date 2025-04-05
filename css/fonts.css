@@ -44,6 +44,7 @@
         Cantarell,
         sans-serif;
     font-size: 1rem;
+    will-change: clip-path, opacity;
     animation: handwriting 2s ease-in-out forwards;
     position: relative;
     white-space: nowrap;
