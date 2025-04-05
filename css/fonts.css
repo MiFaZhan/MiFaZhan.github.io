@@ -22,9 +22,15 @@
 /* 修改导航栏标题样式 */
 .navbar-brand {
     font-family: "Gama Hand", serif; /* 字体名称 */
-    font-size: 1.2rem;          /* 字体大小 */
+    font-size: 1rem;          /* 字体大小 */
 }
 
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 0.8rem; /* 移动端缩小字号 */
+        animation: none; /* 移动端禁用复杂动画 */
+    }
+}
 
 .navbar-brand {
     font-family: 
@@ -37,7 +43,7 @@
         Ubuntu,
         Cantarell,
         sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     animation: handwriting 2s ease-in-out forwards;
     position: relative;
     white-space: nowrap;
@@ -46,15 +52,18 @@
 
 /* 手写动画关键帧 */
 @keyframes handwriting {
-  0% { 
-    opacity: 0;
-    clip-path: inset(0 100% 0 0);
-  }
-  100% {
-    opacity: 1;
-    clip-path: inset(0 0 0 0);
-  }
+    0% { 
+        opacity: 0;
+        -webkit-clip-path: inset(0 100% 0 0);
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0);
+    }
 }
+
 
 
 
