@@ -3,7 +3,8 @@
   body { background: url(/images/mobile-bg.jpg); }
 }*/
 
-/*@media (min-width: 769px) and (max-width: 1024px){
+/*
+@media (min-width: 769px) and (max-width: 1024px){
   .video-background { display: none; }
   body { background: url(/images/mobile-bg.jpg); }
 }
@@ -17,14 +18,6 @@
 @media (hover: none) and (pointer: coarse) {
   .video-background { display: none !important; }
   body { background: url(/images/mobile-bg.jpg); }
-}
-
-/* 保留原有平板规则 */
-@media (min-width: 769px) and (max-width: 1024px) {
-  /* 补充横屏检测 */
-  @media (orientation: landscape) {
-    .video-background { opacity: 0.5 } 
-  }
 }
 
 .video-background {
