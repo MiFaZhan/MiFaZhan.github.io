@@ -16,13 +16,7 @@
 @font-face {
     font-family: 'Gama Hand';
     src: url('/fonts/Gama-Hand.otf') format('opentype'); /* 建议文件名无空格 */
-}
-
-
-/* 修改导航栏标题样式 */
-.navbar-brand {
-    font-family: "Gama Hand", serif; /* 字体名称 */
-    font-size: 1rem;          /* 字体大小 */
+    font-display: swap;
 }
 
 @media (max-width: 768px) {
