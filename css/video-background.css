@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0; 
+  z-index: -1; 
   object-fit: cover;
   pointer-events: none; 
 }
@@ -17,10 +17,4 @@
 
 .video-loaded {
   opacity: 1;
-}
-
-@media (max-width: 768px) {
-  .video-background {
-    transition-duration: 0.3s;  /* 移动端更短过渡 */
-  }
 }
