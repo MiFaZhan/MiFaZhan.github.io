@@ -1,23 +1,26 @@
-/* custom.css */
 .video-background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0; 
   object-fit: cover;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 2s ease;
+  pointer-events: none; 
 }
 
-.video-background.loaded {
+/* 渐显动画 */
+.video-background {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.video-loaded {
   opacity: 1;
 }
 
-/* 防止内容覆盖 */
-#board {
-  position: relative;
-  z-index: 1;
+@media (max-width: 768px) {
+  .video-background {
+    transition-duration: 0.3s;  /* 移动端更短过渡 */
+  }
 }
