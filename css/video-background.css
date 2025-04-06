@@ -6,7 +6,6 @@
   height: 100%;
   z-index: 0; 
   object-fit: cover;
-  pointer-events: none; 
 }
 
 /* 渐显动画 */
@@ -18,3 +17,4 @@
 .video-loaded {
   opacity: 1;
 }
+
