@@ -6,7 +6,7 @@
   <link href="https://mifazhan.top/atom.xml" rel="self"/>
   
   <link href="https://mifazhan.top/"/>
-  <updated>2025-04-08T13:03:31.688Z</updated>
+  <updated>2025-04-08T13:44:46.077Z</updated>
   <id>https://mifazhan.top/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>常用命令</title>
-    <link href="https://mifazhan.top/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>https://mifazhan.top/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <link href="https://mifazhan.top/posts/6fc55794.html"/>
+    <id>https://mifazhan.top/posts/6fc55794.html</id>
     <published>2025-02-24T04:47:00.000Z</published>
-    <updated>2025-04-08T13:03:31.688Z</updated>
+    <updated>2025-04-08T13:44:46.077Z</updated>
     
-    <content type="html"><![CDATA[<p>初学markdown和GitHub部署，写一个文档记录常用命令</p><h1 id="Git-Bash"><a href="#Git-Bash" class="headerlink" title="Git Bash"></a>Git Bash</h1><p>hexo clean &amp;&amp; hexo deploy –generate</p><p>本地测试</p><p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code></p><pre><code class="hljs"> hexo d -g</code></pre><table><thead><tr><th align="center">命令</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</td><td align="center">清理缓存 → 生成 → 部署（完整流程）</td></tr><tr><td align="center">hexo d –generate 或 hexo d -g</td><td align="center">自动生成后直接部署（跳过手动生成）</td></tr><tr><td align="center">hexo deploy –force 或 hexo d -f</td><td align="center">强制推送（覆盖远程仓库内容）</td></tr></tbody></table><p>调试部署错误<br>如果遇到问题（如 Spawn failed），添加 –debug 参数查看详细日志：</p><p><code>hexo deploy --debug</code></p><pre><code class="hljs">npm install -g hexo-cli  # 更新插件</code></pre><p>创建文章</p><pre><code class="hljs">hexo new post</code></pre><p>你好</p><p><img src="/%5Cimages%5Cpasted-0.png%5C" alt="upload successful"></p>]]></content>
+    <content type="html"><![CDATA[<p>初学markdown和GitHub部署，写一个文档记录常用命令</p><h1 id="Git-Bash"><a href="#Git-Bash" class="headerlink" title="Git Bash"></a>Git Bash</h1><p>hexo clean &amp;&amp; hexo deploy –generate</p><p>本地测试</p><p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code></p><pre><code class="hljs"> hexo d -g</code></pre><table><thead><tr><th align="center">命令</th><th align="center">说明</th></tr></thead><tbody><tr><td align="center">hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</td><td align="center">清理缓存 → 生成 → 部署（完整流程）</td></tr><tr><td align="center">hexo d –generate 或 hexo d -g</td><td align="center">自动生成后直接部署（跳过手动生成）</td></tr><tr><td align="center">hexo deploy –force 或 hexo d -f</td><td align="center">强制推送（覆盖远程仓库内容）</td></tr></tbody></table><p>调试部署错误<br>如果遇到问题（如 Spawn failed），添加 –debug 参数查看详细日志：</p><p><code>hexo deploy --debug</code></p><pre><code class="hljs">npm install -g hexo-cli  # 更新插件</code></pre><p>创建文章</p><pre><code class="hljs">hexo new post</code></pre><p>清理 npm 缓存  </p><pre><code class="hljs">npm cache clean --force</code></pre>]]></content>
     
     
       
@@ -41,10 +41,10 @@
   
   <entry>
     <title>欢迎访问我的个人博客，小破站正在装修中</title>
-    <link href="https://mifazhan.top/%E6%AC%A2%E8%BF%8E/"/>
-    <id>https://mifazhan.top/%E6%AC%A2%E8%BF%8E/</id>
+    <link href="https://mifazhan.top/posts/9e752869.html"/>
+    <id>https://mifazhan.top/posts/9e752869.html</id>
     <published>2025-02-10T13:10:18.000Z</published>
-    <updated>2025-02-20T12:20:27.492Z</updated>
+    <updated>2025-04-08T13:37:18.446Z</updated>
     
     <content type="html"><![CDATA[<p>正在完善后端插件、自动部署、阅读统计、评论回复……</p><p>功能完善后随缘更新</p>]]></content>
     
@@ -63,10 +63,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://mifazhan.top/hello-world/"/>
-    <id>https://mifazhan.top/hello-world/</id>
+    <link href="https://mifazhan.top/posts/4a17b156.html"/>
+    <id>https://mifazhan.top/posts/4a17b156.html</id>
     <published>2025-02-10T11:38:02.579Z</published>
-    <updated>2025-02-10T11:38:02.579Z</updated>
+    <updated>2025-04-08T13:37:18.447Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
