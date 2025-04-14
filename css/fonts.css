@@ -1,0 +1,93 @@
+/*@font-face {
+    font-family: 'Foxlite Script';
+    src: url('/fonts/Foxlite Script.otf') format('otf');
+}*/
+
+/*@font-face {
+    font-family: 'WindSong-Regular';
+    src: url('/fonts/WindSong-Regular.otf') format('otf');
+}*/
+
+/*@font-face {
+    font-family: 'Gama Hand';
+    src: url('/fonts/Gama Hand.otf') format('otf');
+}*/
+
+@font-face {
+    font-family: 'Gama Hand';
+    src: url('/fonts/Gama-Hand.otf') format('opentype'); /* 建议文件名无空格 */
+    font-display: swap;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 0.8rem; /* 移动端缩小字号 */
+        animation: none; /* 移动端禁用复杂动画 */
+    }
+}
+
+.navbar-brand {
+    font-family: 
+        'Gama Hand',
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen-Sans,
+        Ubuntu,
+        Cantarell,
+        sans-serif;
+    font-size: 0.9rem;
+    will-change: clip-path, opacity;
+    animation: handwriting 2s ease-in-out forwards;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* 手写动画关键帧 */
+@keyframes handwriting {
+    0% { 
+        opacity: 0;
+        -webkit-clip-path: inset(0 100% 0 0);
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* 脉冲动画 */
+@keyframes float-pulse {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+.navbar-brand:hover {
+  animation: float-pulse 1s ease-in-out infinite;
+}
+
+/* 轨迹动画 */
+.navbar-brand {
+  position: relative;
+}
+.navbar-brand:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 80%;
+  height: 3px;
+  background: rgba(0,0,0,0.1);
+  transform: translateX(-50%);
+  animation: trail 0.5s ease-out;
+}
+
+@keyframes trail {
+  from { width: 0; opacity: 1; }
+  to { width: 80%; opacity: 0; }
+}
