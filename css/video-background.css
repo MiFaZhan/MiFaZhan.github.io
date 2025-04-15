@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
 
   &::before {
     content: "";
@@ -37,12 +37,12 @@
   pointer-events: none;
 }
 
-/*.content-container {
+.content-container {
   position: relative;
   z-index: 1;
   background: transparent;
   min-height: 100vh;
-}*/
+}
 
 /* 移动端适配 */
 @media (max-aspect-ratio: 16/9) {
