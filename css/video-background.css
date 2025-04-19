@@ -19,14 +19,13 @@
     transition: 
       opacity 1.2s cubic-bezier(0.4, 0, 0.2, 1),
       backdrop-filter 1.2s ease; /* 分离过渡属性 */
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);/* 毛玻璃效果 */
   }
 
   &.video-loaded::before {
     opacity: 0;
     backdrop-filter: blur(0);
   }
-  
 }
 
 .video-container video {
@@ -42,12 +41,28 @@
   pointer-events: none;
 }
 
-.content-container {
+body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 确保内容显示在视频上方 */
+main, footer {
   position: relative;
   z-index: 1;
   background: transparent;
-  min-height: 100vh;
 }
+
+/* 覆盖原有header样式 */
+header.navbar {
+  position: fixed !important;  /* 固定定位 */
+  top: 0;
+  width: 100%;
+  z-index: 1000 !important;    /* 必须高于视频容器 */
+}
+
 
 /* 移动端适配 */
 @media (max-aspect-ratio: 16/9) {
