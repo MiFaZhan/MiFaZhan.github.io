@@ -71,7 +71,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"mifazhan.top","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-64G6DL743Y"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"mifazhan.top","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":"G-64G6DL743Y"},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":"https://cloud.umami.is/script.js","website_id":"9e1629a5-736c-4583-a656-19d5238102eb","domains":null,"start_time":"2025-02-10T00:00:00.000Z","token":"api_Fp93RqKJg6Rryen2AT1dAkunRngRcEDz","api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -100,6 +100,17 @@
     </script>
   
 
+  
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        let umami = document.createElement('script');
+        umami.async = true;
+        umami.src = "https://cloud.umami.is/script.js";
+        umami.setAttribute("data-website-id", "9e1629a5-736c-4583-a656-19d5238102eb");
+        umami.setAttribute("data-domains", "");
+        document.head.appendChild(umami);
+      }
+    </script>
   
 
   
@@ -206,10 +217,50 @@
           
           
           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" href="javascript:;" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-bookmark-fill"></i>
+                <span>Blog</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/" target="_self">
+                    
+                    <span>归档</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/" target="_self">
+                    
+                    <span>分类</span>
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/" target="_self">
+                    
+                    <span>标签</span>
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>归档</span>
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
               </a>
             </li>
           
@@ -219,21 +270,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>分类</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>标签</span>
+              <a class="nav-link" href="https://cloud.umami.is/share/Fu14FoNI0zuQxpwE/mifazhan.top" target="_self">
+                <i class="iconfont icon-codeforces"></i>
+                <span>访客统计</span>
               </a>
             </li>
           
@@ -246,18 +285,6 @@
               <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/" target="_self">
-                <i class="iconfont icon-link-fill"></i>
-                <span>友链</span>
               </a>
             </li>
           
@@ -329,13 +356,13 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/JetBrains/" target="_self">
+        <a href="/posts/54eeecd6/" target="_self">
           JetBrains全家桶激活教程
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/JetBrains/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/54eeecd6/" target="_self">
         <div>
           简介JetBrains旗下的诸多软件（如IDEA、PyCharm、WebStorm）都非常好用，目前提供免费但功能受限社区版本，专业版高昂的费用让人望而却步。 有没有什么方法可以免费使用专业版呢？这便是本文要介绍的内容public-gateway-checker 注意！ 本站不提供任何破解软件安装包，仅介绍在互联网被广泛流传和使用的方法思路，信息来自网络，版权争议与本站无关。 使用该方法获取的专业
         </div>
@@ -392,15 +419,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/Fluid/" target="_self">
+        <a href="/posts/46339511/" target="_self">
           Fluid主题美化-视频背景
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/Fluid/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/46339511/" target="_self">
         <div>
-          简介引言当大家使用Fluid主题搭建好博客后，看着默认的背景图片是否会觉得单调？ 即使切换图片也感觉效果不佳？看着别人既美观又实用的博客傻傻发呆？  本文主要记录个人对Fluid主题的进行改造，从而实现视频背景功能的过程。注意！本文部分核心代码是借助deepseek生成，此方案可能不是最优解，如您有更好的意见欢迎评论区交流。 版本信息起初在翻阅相关教程时，发现很多内容无法复现。主要原因是Fluid
+          简介引言当大家使用Fluid主题搭建好博客后，看着默认的背景图片是否会觉得单调？ 即使切换图片也感觉效果不佳？看着别人既美观又实用的博客傻傻发呆？   本文主要记录个人对Fluid主题的进行改造，从而实现视频背景功能的过程。注意！本文部分核心代码是借助deepseek生成，此方案可能不是最优解，如您有更好的意见欢迎评论区交流。 版本信息起初在翻阅相关教程时，发现很多内容无法复现。主要原因是Flui
         </div>
       </a>
 
@@ -455,15 +482,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" target="_self">
-          常用命令
+        <a href="/posts/6fc55794/" target="_self">
+          Hexo常用命令&amp;markdown语法
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/6fc55794/" target="_self">
         <div>
-          初学markdown和GitHub部署，写一个文档记录常用命令由于在记录常用命令的同时，也在使用这篇文章练习markdown的语法，所以文章内容较杂乱。 Git Bashhexo clean &amp;&amp; hexo deploy –generate 本地测试 hexo clean &amp;&amp; hexo g &amp;&amp; hexo s  hexo d -g     命令 说
+          初见Hexo框架并且安装了一些插件,对于命令不太熟悉，以此文档记录汇总常用命令以及markdown语法 部分内容出自Hexo文档，为方便复制粘贴后直接运行，删除了$  Hexoversion1hexo version  显示版本信息。 new1hexo new [layout] &lt;title&gt;  新建一篇文章。 如果没有设置 layout 的话，默认使用 _config.yml 中的
         </div>
       </a>
 
@@ -477,11 +504,32 @@
           </div>
         
         
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="category-chain-item">博客</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E6%B5%8B%E8%AF%95/">#测试</a>
+              <a href="/tags/Hexo/">#Hexo</a>
             
           </div>
         
@@ -495,13 +543,13 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/%E6%AC%A2%E8%BF%8E/" target="_self">
+        <a href="/posts/9e752869/" target="_self">
           欢迎访问我的个人博客，小破站正在装修中
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/%E6%AC%A2%E8%BF%8E/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/posts/9e752869/" target="_self">
         <div>
           正在完善后端插件、自动部署、阅读统计、评论回复…… 功能完善后随缘更新
         </div>
