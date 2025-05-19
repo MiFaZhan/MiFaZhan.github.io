@@ -22,19 +22,21 @@
   <meta name="author" content="米应如是">
   <meta name="keywords" content="博客">
   
-    <meta name="description" content="引言之前文章我们介绍了，使用 Typora 编辑博客文章Hexo-博客文章编辑(Typora) - MiYingRuShi 讲解了两种配置永久链接的方法 Hexo-永久链接 - MiYingRuShi 版本打开 项目根目录\package.json 文件即可看到当前 hexo 版本 请查看版本信息，以确保此文章内容适用于你的项目 123&quot;hexo&quot;: &#123;    &amp;qu">
+    <meta name="description" content="引言之前文章我们介绍了使用 Typora 编辑博客文章Hexo-博客文章编辑(Typora) - MiYingRuShi 即开启 文章资源文件夹，配合 Typora 编辑器的功能，实现方便快捷的文章编辑、图片管理 讲解了两种配置永久链接的方法 Hexo-永久链接 - MiYingRuShi，本博客采用第二种，即安装 hexo-abbrlink 插件 然而在配置永久链接之后，博客图片无法正常显示，本">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo-图片引用问题">
 <meta property="og:url" content="https://mifazhan.top/posts/dc842c8c/index.html">
 <meta property="og:site_name" content="MiYingRuShi">
-<meta property="og:description" content="引言之前文章我们介绍了，使用 Typora 编辑博客文章Hexo-博客文章编辑(Typora) - MiYingRuShi 讲解了两种配置永久链接的方法 Hexo-永久链接 - MiYingRuShi 版本打开 项目根目录\package.json 文件即可看到当前 hexo 版本 请查看版本信息，以确保此文章内容适用于你的项目 123&quot;hexo&quot;: &#123;    &amp;qu">
+<meta property="og:description" content="引言之前文章我们介绍了使用 Typora 编辑博客文章Hexo-博客文章编辑(Typora) - MiYingRuShi 即开启 文章资源文件夹，配合 Typora 编辑器的功能，实现方便快捷的文章编辑、图片管理 讲解了两种配置永久链接的方法 Hexo-永久链接 - MiYingRuShi，本博客采用第二种，即安装 hexo-abbrlink 插件 然而在配置永久链接之后，博客图片无法正常显示，本">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://mifazhan.top/posts/dc842c8c/file-20250519203608193.png">
 <meta property="article:published_time" content="2025-05-18T19:38:00.000Z">
-<meta property="article:modified_time" content="2025-05-19T12:17:14.853Z">
+<meta property="article:modified_time" content="2025-05-19T14:47:58.542Z">
 <meta property="article:author" content="米应如是">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="abbrlink">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://mifazhan.top/posts/dc842c8c/file-20250519203608193.png">
   
   
   
@@ -353,7 +355,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          148 字
+          619 字
         
       </span>
     
@@ -364,7 +366,7 @@
         
         
         
-          2 分钟
+          6 分钟
         
       </span>
     
@@ -406,7 +408,7 @@
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2025年5月19日 中午
+                    本文最后更新于 2025年5月19日 下午
                   
                 
               </p>
@@ -414,17 +416,41 @@
             
               <div class="markdown-body">
                 
-                <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>之前文章我们介绍了，使用 Typora 编辑博客文章<a href="https://mifazhan.top/posts/b915b0ef/">Hexo-博客文章编辑(Typora) - MiYingRuShi</a></p>
-<p>讲解了两种配置永久链接的方法 <a href="https://mifazhan.top/posts/33b326d2/">Hexo-永久链接 - MiYingRuShi</a></p>
-<h3 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h3><p>打开 <code>项目根目录\package.json</code> 文件即可看到当前 hexo 版本</p>
+                <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>之前文章我们介绍了使用 Typora 编辑博客文章<a href="https://mifazhan.top/posts/b915b0ef/">Hexo-博客文章编辑(Typora) - MiYingRuShi</a></p>
+<p>即开启 <code>文章资源文件夹</code>，配合 Typora 编辑器的功能，实现方便快捷的文章编辑、图片管理</p>
+<p>讲解了两种配置永久链接的方法 <a href="https://mifazhan.top/posts/33b326d2/">Hexo-永久链接 - MiYingRuShi</a>，本博客采用第二种，即安装 hexo-abbrlink 插件</p>
+<p>然而在配置永久链接之后，博客图片无法正常显示，本篇文章主要记录这个问题以及解决方法</p>
+<img src="/posts/dc842c8c/file-20250519203608193.png" srcset="/img/loading.gif" lazyload class="">
+
+<h2 id="版本"><a href="#版本" class="headerlink" title="版本"></a>版本</h2><p>打开 <code>项目根目录\package.json</code> 文件即可看到当前 hexo 版本</p>
 <p>请查看版本信息，以确保此文章内容适用于你的项目</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;hexo&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">&#123;</span><br>    <span class="hljs-attr">&quot;version&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;7.3.0&quot;</span><br>  <span class="hljs-punctuation">&#125;</span><br></code></pre></td></tr></table></figure>
 
+<h2 id="默认配置"><a href="#默认配置" class="headerlink" title="默认配置"></a>默认配置</h2><p>打开 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration.html">Hexo配置文档</a>可以查看 <code>_config.yml</code> 各配置的功能</p>
+<p>在使用 hexo 框架搭建博客后，其 URL 部分默认配置如下</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs elixir"><span class="hljs-comment"># URL</span><br><span class="hljs-comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="hljs-symbol">url:</span> <span class="hljs-symbol">http:</span>//example.com<br><span class="hljs-symbol">permalink:</span> <span class="hljs-symbol">:year/</span><span class="hljs-symbol">:month/</span><span class="hljs-symbol">:day/</span><span class="hljs-symbol">:title/</span><br></code></pre></td></tr></table></figure>
 
+<h2 id="图片引用方式"><a href="#图片引用方式" class="headerlink" title="图片引用方式"></a>图片引用方式</h2><p>1、<code>&#123;% asset_img "image.jpg" "" %&#125;</code></p>
+<p>Markdown 语法</p>
+<p>2、<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6">img 标签</a></p>
+<p>3、<code>asset_img</code> 标签</p>
+<h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><p>在开始分析之前需要先明确当前的设置</p>
+<ul>
+<li>启用post_asset_folder</li>
+<li>使用相对路径的本地图片引用</li>
+</ul>
+<p>最早出现图片无法显示问题是在安装 hexo-abbrlink 插件之后，于是想当然的以为是插件的问题</p>
+<p>将 hexo-abbrlink 插件卸载后，保持 URL 默认设置，图片引用问题也确实解决了</p>
+<p>但这个问题确实与abbrlink插件无关，而是与修改博客_config.yml配置文件中的URL选项有关。</p>
+<p>即使按照 hexo 官方文档<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/permalinks">永久链接（Permalinks） | Hexo</a> 调整 Permalink，也有可能出现图片无法显示的问题</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs ruby"><span class="hljs-comment"># URL</span><br><span class="hljs-comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="hljs-symbol">url:</span> <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/mifazhan.top/</span><br><span class="hljs-symbol">permalink:</span> posts/<span class="hljs-symbol">:title/</span><br></code></pre></td></tr></table></figure>
 
-<p>常见解决方法</p>
-<p>一、是按照 hexo 官方文档<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/permalinks">永久链接（Permalinks） | Hexo</a> 调整 Permalink</p>
-<p>二、通过安装插件，如 <a target="_blank" rel="noopener" href="https://github.com/ohroy/hexo-abbrlink">GitHub - ohroy&#x2F;hexo-abbrlink: create one and only link for every post for hexo</a> 来实现永久链接</p>
+<p>例如将配置修改为上述形式后，文章图片也无法正确加载</p>
+<p>无论是理应会自动转换的<code>&#123;% asset_img "image.jpg" "" %&#125;</code>，还是都无法正常显示</p>
+<p>而这时使用asset_img 语法引用的图片则没有任何问题，依然可以正常显示。</p>
+<p>这时倘若将配置改为<code>permalink: :title/</code>或改回默认，文章图片所有的引用都不会出问题</p>
+<p>无论是理应会自动转换的<code>![](filename/image.jpg)</code>，还是<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6">img 标签</a>都无法正常显示</p>
+<p>而这时使用asset_img 语法引用的图片则没有任何问题，依然可以正常显示。</p>
 
                 
               </div>
