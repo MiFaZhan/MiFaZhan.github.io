@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mifazhan.top/posts/52b6ead4/</loc>
+    
+    <lastmod>2025-05-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://mifazhan.top/posts/9e752869/</loc>
     
     <lastmod>2025-05-20</lastmod>
@@ -117,13 +126,6 @@
   
   <url>
     <loc>https://mifazhan.top/tags/Hexo/</loc>
-    <lastmod>2025-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mifazhan.top/tags/Typora/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
