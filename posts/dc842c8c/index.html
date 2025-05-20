@@ -31,10 +31,10 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://mifazhan.top/posts/dc842c8c/file-20250519203608193.png">
 <meta property="article:published_time" content="2025-05-18T19:38:00.000Z">
-<meta property="article:modified_time" content="2025-05-19T14:47:58.542Z">
+<meta property="article:modified_time" content="2025-05-20T03:07:23.241Z">
 <meta property="article:author" content="米应如是">
-<meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="abbrlink">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://mifazhan.top/posts/dc842c8c/file-20250519203608193.png">
   
@@ -355,7 +355,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          619 字
+          842 字
         
       </span>
     
@@ -366,7 +366,7 @@
         
         
         
-          6 分钟
+          8 分钟
         
       </span>
     
@@ -408,7 +408,7 @@
               <p id="updated-time" class="note note-info" style="">
                 
                   
-                    本文最后更新于 2025年5月19日 下午
+                    本文最后更新于 2025年5月20日 凌晨
                   
                 
               </p>
@@ -430,10 +430,15 @@
 <p>在使用 hexo 框架搭建博客后，其 URL 部分默认配置如下</p>
 <figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs elixir"><span class="hljs-comment"># URL</span><br><span class="hljs-comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="hljs-symbol">url:</span> <span class="hljs-symbol">http:</span>//example.com<br><span class="hljs-symbol">permalink:</span> <span class="hljs-symbol">:year/</span><span class="hljs-symbol">:month/</span><span class="hljs-symbol">:day/</span><span class="hljs-symbol">:title/</span><br></code></pre></td></tr></table></figure>
 
-<h2 id="图片引用方式"><a href="#图片引用方式" class="headerlink" title="图片引用方式"></a>图片引用方式</h2><p>1、<code>&#123;% asset_img "image.jpg" "" %&#125;</code></p>
+<h2 id="图片引用方式"><a href="#图片引用方式" class="headerlink" title="图片引用方式"></a>图片引用方式</h2><p> 1、<code>&#123;% asset_img "image.jpg" "" %&#125;</code></p>
 <p>Markdown 语法</p>
-<p>2、<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6">img 标签</a></p>
-<p>3、<code>asset_img</code> 标签</p>
+<p>早期版本的 hexo 无法直接通过 Markdown 语法引用图片</p>
+<p>随着 hexo 的更新，已经支持将 <code>![](image.jpg)</code> 自动转换为 <code>&lt;img src=&quot;/posts/dc842c8c/image.jpg&quot; &gt;</code></p>
+<h3 id="2、img-标签"><a href="#2、img-标签" class="headerlink" title="2、img 标签"></a>2、<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6">img 标签</a></h3><p>HTML 的 <code>&lt;img&gt;</code> 标签，没什么好介绍的</p>
+<h3 id="3、asset-img-标签"><a href="#3、asset-img-标签" class="headerlink" title="3、asset_img 标签"></a>3、<code>asset_img</code> 标签</h3><p>这是 Hexo 的专属标签插件，​<strong>​自动适配 Hexo 资源文件夹的路径规则​</strong>​。当开启 <code>post_asset_folder</code> 配置后，Hexo 会根据文章路径动态生成图片的最终 URL</p>
+<p>但使用 <code>asset_img</code> 标签只能在已部署或者本地运行测试的博客页面中显示，在 Markdown 编辑器内是无法预览图片的</p>
+<p>再加上随着 hexo 的更新，已经支持将 <code>![](image.jpg)</code> 自动转换为 <code>&lt;img src=&quot;/posts/dc842c8c/image.jpg&quot; &gt;</code></p>
+<p>所以 <code>asset_img</code> 标签这种引用方法很少在编辑文章时直接使用</p>
 <h1 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h1><p>在开始分析之前需要先明确当前的设置</p>
 <ul>
 <li>启用post_asset_folder</li>
@@ -446,11 +451,13 @@
 <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs ruby"><span class="hljs-comment"># URL</span><br><span class="hljs-comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span><br><span class="hljs-symbol">url:</span> <span class="hljs-symbol">https:</span>/<span class="hljs-regexp">/mifazhan.top/</span><br><span class="hljs-symbol">permalink:</span> posts/<span class="hljs-symbol">:title/</span><br></code></pre></td></tr></table></figure>
 
 <p>例如将配置修改为上述形式后，文章图片也无法正确加载</p>
-<p>无论是理应会自动转换的<code>&#123;% asset_img "image.jpg" "" %&#125;</code>，还是都无法正常显示</p>
+<p>无论是理应会自动转换的 <code>&#123;% asset_img "image.jpg" "" %&#125;</code>，还是img 标签都无法正常显示</p>
 <p>而这时使用asset_img 语法引用的图片则没有任何问题，依然可以正常显示。</p>
-<p>这时倘若将配置改为<code>permalink: :title/</code>或改回默认，文章图片所有的引用都不会出问题</p>
-<p>无论是理应会自动转换的<code>![](filename/image.jpg)</code>，还是<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6">img 标签</a>都无法正常显示</p>
-<p>而这时使用asset_img 语法引用的图片则没有任何问题，依然可以正常显示。</p>
+<p>这时倘若将配置改为<code>permalink: :title/</code>，文章图片所有的引用都不会出问题</p>
+<p>既然我们需要修改URL配置，而修改后其他引用方法会失效</p>
+<p>那么索性寻找方法，将<code>![]()</code>引用方法转换为 ​​asset_img 语法</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/cocowool/hexo-image-link">hexo-image-link</a>插件完美解决了这个问题</p>
+<p>按照介绍安装后，<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code> 本地运行测试问题解决</p>
 
                 
               </div>
@@ -484,9 +491,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Hexo/" class="print-no-link">#Hexo</a>
-      
         <a href="/tags/abbrlink/" class="print-no-link">#abbrlink</a>
+      
+        <a href="/tags/Hexo/" class="print-no-link">#Hexo</a>
       
     </div>
   
@@ -517,7 +524,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2025年5月19日</div>
+          <div>2025年5月20日</div>
         </div>
       
       
