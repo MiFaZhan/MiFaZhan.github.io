@@ -104,6 +104,20 @@
   </url>
   
   <url>
+    <loc>https://mifazhan.top/tags/URL/</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://mifazhan.top/tags/abbrlink/</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://mifazhan.top/tags/Hexo/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>weekly</changefreq>
@@ -119,20 +133,6 @@
   
   <url>
     <loc>https://mifazhan.top/tags/Typora/</loc>
-    <lastmod>2025-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mifazhan.top/tags/URL/</loc>
-    <lastmod>2025-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://mifazhan.top/tags/abbrlink/</loc>
     <lastmod>2025-05-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
