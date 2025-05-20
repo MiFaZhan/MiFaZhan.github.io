@@ -20,11 +20,11 @@
     
     <tags>
       
+      <tag>Hexo</tag>
+      
       <tag>URL</tag>
       
       <tag>abbrlink</tag>
-      
-      <tag>Hexo</tag>
       
     </tags>
     
@@ -116,7 +116,7 @@
   
   
   <entry>
-    <title>Fluid主题美化-视频背景</title>
+    <title>Fluid主题-添加视频背景</title>
     <link href="/posts/46339511/"/>
     <url>/posts/46339511/</url>
     
@@ -133,8 +133,6 @@
     <tags>
       
       <tag>Fluid</tag>
-      
-      <tag>视频背景</tag>
       
     </tags>
     
