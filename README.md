@@ -1,4 +1,4 @@
-# MiFaZhan 的博客站点仓库
+# MiYingRuShi 的博客站点仓库
 
 [![GitHub Pages Status](https://img.shields.io/github/deployments/MiFaZhan/MiFaZhan.github.io/github-pages?label=站点状态)](https://github.com/MiFaZhan/MiFaZhan.github.io/deployments)
 [![Auto Sync](https://img.shields.io/badge/同步来源-blog仓库-2CA5E0)](https://github.com/MiFaZhan/blog)
