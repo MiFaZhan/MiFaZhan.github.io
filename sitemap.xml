@@ -2,7 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://mifazhan.top/pdfjs-5.3.31-legacy-dist/web/viewer.html</loc>
+    
+    <lastmod>2025-06-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mifazhan.top/pdfjs-5.3.31-legacy-dist/web/locale/locale.json</loc>
+    
+    <lastmod>2025-06-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://mifazhan.top/about/index.html</loc>
+    
+    <lastmod>2025-06-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mifazhan.top/posts/b915b0ef/</loc>
     
     <lastmod>2025-06-05</lastmod>
     
@@ -21,15 +48,6 @@
   
   <url>
     <loc>https://mifazhan.top/posts/33b326d2/</loc>
-    
-    <lastmod>2025-06-05</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://mifazhan.top/posts/b915b0ef/</loc>
     
     <lastmod>2025-06-05</lastmod>
     
