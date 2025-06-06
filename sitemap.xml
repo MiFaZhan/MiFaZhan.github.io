@@ -2,34 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://mifazhan.top/posts/0/</loc>
-    
-    <lastmod>2025-06-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://mifazhan.top/about/index.html</loc>
-    
-    <lastmod>2025-06-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://mifazhan.top/posts/b915b0ef/</loc>
-    
-    <lastmod>2025-06-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://mifazhan.top/posts/9e752869/</loc>
     
     <lastmod>2025-06-06</lastmod>
     
@@ -47,7 +20,25 @@
   </url>
   
   <url>
+    <loc>https://mifazhan.top/posts/9e752869/</loc>
+    
+    <lastmod>2025-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://mifazhan.top/posts/6fc55794/</loc>
+    
+    <lastmod>2025-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mifazhan.top/posts/b915b0ef/</loc>
     
     <lastmod>2025-06-06</lastmod>
     
@@ -66,6 +57,15 @@
   
   <url>
     <loc>https://mifazhan.top/posts/52b6ead4/</loc>
+    
+    <lastmod>2025-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://mifazhan.top/posts/0/</loc>
     
     <lastmod>2025-06-06</lastmod>
     
